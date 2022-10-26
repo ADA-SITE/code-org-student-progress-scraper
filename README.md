@@ -6,7 +6,7 @@ Code.org also has a function which lets teachers create sections for students to
 See one discussion at the Code.org Professional Learning Community Forums [How to download student progress?](https://forum.code.org/t/how-to-download-student-progress/6114) that started in 2016. The last response in the thread was in October 2021 from josh.schulte (Senior Program Manager @ Code.org):
 >Hello @ayusubov and others! You’re far from alone in this request for a print-friendly / exportable or otherwise easily-sharable progress report, and our team has work tracked to address this in future updates. Reports and comments like those in this thread make our site and offerings better for everyone, and allow us to better prioritize our work, so thanks again for chiming in here!
 ## Our Solution
-A quick reserach revealed that the student progress dashboard pages in HTML have a strange behavior:
+A quick research revealed that the student progress dashboard pages in HTML have a strange behavior:
 - student data and their progress data is stored separately in the page
 - progress data is downloaded portion-by-portion while you scroll down the list
 - if you do not save the page as a complete web page, you do not get this data included in the .html file.
