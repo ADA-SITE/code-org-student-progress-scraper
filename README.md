@@ -15,9 +15,9 @@ You will have to prepare several .html files of saved dashboard page for differe
 
 ## User Manual
 <ol>
-    <li>Place the downloaded HTML files under progress_files folder.</li>
+    <li>Place the downloaded .html files under progress_files folder.</li>
     <li>Run solver with the command line arguments: <pre>python solver.py "SECTION_NAME"</pre></li>
     <li>Example: <pre>python solver.py "SITE 1101: Homework 1 (Fall 2022)"</pre></li>
-    <li><em>user_progress_report.csv</em> file will hold the processed results of each student.</li>
+    <li>The <em>user_progress_report.csv</em> file will hold the processed results of each student.</li>
 </ol>
 
