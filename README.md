@@ -12,3 +12,12 @@ A quick reserach revealed that the student progress dashboard pages in HTML have
 - if you do not save the page as a complete web page, you do not get this data included in the .html file.
 
 You will have to prepare several .html files of saved dashboard page for different positions of scrolling in the list. A small Python script by @nsadili will scan these .html files, extract student records data, then match it with progress data and save it as a .csv file. 
+
+## User Manual
+<ol>
+    <li>Place the downloaded HTML files under progress_files.</li>
+    <li>Run solver with the command line arguments: <pre>python solver.py "SECTION_NAME"</pre></li>
+    <li>Example: <pre>python solver.py "SITE 1101: Homework 1 (Fall 2022)"</pre></li>
+    <li><em>user_progress_report.csv</em> file will hold the processed results of each student.</li>
+</ol>
+
