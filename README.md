@@ -30,7 +30,7 @@ If you have never installed Python on your machine, you will need to download an
     <li>When installed check if the installation went well:</li>
     <ul>
         <li>Open Terminal (Command Line or PowerShell for Windows)</li>
-        <li>Execute the following command: <pre>python --version</pre>. This should show the current installed version of Python.</li>
+        <li>Execute the following command: <pre>python --version</pre>This should show the current installed version of Python.</li>
         <li>If it shows the version proceed with running the application shown in the User Manual.</li>
         <li>If it cannot find <em>python</em> check the installation.</li>
     </ul>
