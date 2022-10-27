@@ -21,3 +21,16 @@ You will have to prepare several .html files of saved dashboard page for differe
     <li>The <em>user_progress_report.csv</em> file will hold the processed results of each student.</li>
 </ol>
 
+## Python Guide
+If you have never installed Python on your machine, you will need to download and install Python (preferrably 3.x version).
+<ol>
+    <li>Visit [Python Downloads](https://www.python.org/downloads/).</li>
+    <li>Download installer for your OS.</li>
+    <li>Run the setup to install. (Check the "Add Python 3.x to PATH" esp. for Windows)</li>
+    <li>When installed check if the installation went well:</li>
+    <ul>
+        <li>Open Terminal (Command Line or PowerShell for Windows)</li>
+        <li>Execute the following command: <pre>python --version</pre>. This should show the current installed version of Python.</li>
+        <li>If it shows the version proceed with running the application shown in the User Manual.</li>
+        <li>If it cannot find <em>python</em> check the installation.</li>
+    </ul>
