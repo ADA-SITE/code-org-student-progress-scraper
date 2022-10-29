@@ -14,18 +14,16 @@ A quick research revealed that the student progress dashboard pages in HTML have
 You will have to prepare several .html files of saved dashboard page for different positions of scrolling in the list. A small Python script by @nsadili will scan these .html files, extract student records data, then match it with progress data and save it as a .csv file. 
 
 ## User Manual
-<ol>
-    <li>Place the downloaded .html files under progress_files folder.</li>
-    <li>Run solver with the command line arguments: <pre>python solver.py "SECTION_NAME"</pre></li>
-    <li>Example: <pre>python solver.py "SITE 1101: Homework 1 (Fall 2022)"</pre></li>
-    <li>The <em>user_progress_report.csv</em> file will hold the processed results of each student.</li>
-</ol>
+1. Place the downloaded .html files under progress_files folder.
+2. Run solver with the command line arguments: <pre>python solver.py "SECTION_NAME"</pre>
+Example: <pre>python solver.py "SITE 1101: Homework 1 (Fall 2022)"</pre>
+3. The <em>user_progress_report.csv</em> file will hold the processed results of each student.
 
 ## Python Guide
 If you have never installed Python on your machine, you will need to download and install Python (preferrably 3.x version).
 1. Visit [Python Downloads](https://www.python.org/downloads/).
 2. Download installer for your OS.
-3. Run the setup to install. (Check the "Add Python 3.x to PATH" esp. for Windows).
+3. Run the setup to install. (Check the "Add Python 3.x to PATH", especially for Windows).
 4. After installation is complete, check if itreadme md went well:
    - Open Terminal (Command Line or PowerShell for Windows)
    - Execute the following command: <pre>python --version</pre>This should show the current installed version of Python.
