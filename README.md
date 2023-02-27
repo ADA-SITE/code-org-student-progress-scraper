@@ -29,3 +29,5 @@ If you have never installed Python on your machine, you will need to download an
    - Execute the following command: <pre>python --version</pre>This should show the current installed version of Python.
    - If it shows the version proceed with running the application shown in the User Manual.
    - If it cannot find <em>python</em> check the installation.
+5. This script does not work without [Beautiful Soup](https://pypi.org/project/beautifulsoup4/), which is a library that makes it easy to scrape information from web pages.
+   - To instal Beautiful Soup executre the following command: <pre>pip install beautifulsoup4</pre>
