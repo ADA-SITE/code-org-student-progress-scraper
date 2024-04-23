@@ -14,7 +14,7 @@ A quick research revealed that the student progress dashboard pages in HTML have
 You will have to prepare several .html files of saved dashboard page for different positions of scrolling in the list. A small Python script by @nsadili will scan these .html files, extract student records data, then match it with progress data and save it as a .csv file. 
 
 ## User Manual
-1. Place the downloaded .html files under progress_files folder.
+1. Place the downloaded .html files under progress_files folder. Delete the .keep file in the folder.
 2. Run solver with the command line arguments: <pre>python solver.py "SECTION_NAME"</pre>
 Example: <pre>python solver.py "SITE 1101: Homework 1 (Fall 2022)"</pre>
 3. The <em>user_progress_report.csv</em> file will hold the processed results of each student.
@@ -24,10 +24,10 @@ If you have never installed Python on your machine, you will need to download an
 1. Visit [Python Downloads](https://www.python.org/downloads/).
 2. Download installer for your OS.
 3. Run the setup to install. (Check the "Add Python 3.x to PATH", especially for Windows).
-4. After installation is complete, check if itreadme md went well:
+4. After installation is complete, check if it went well:
    - Open Terminal (Command Line or PowerShell for Windows)
    - Execute the following command: <pre>python --version</pre>This should show the current installed version of Python.
    - If it shows the version proceed with running the application shown in the User Manual.
    - If it cannot find <em>python</em> check the installation.
 5. This script does not work without [Beautiful Soup](https://pypi.org/project/beautifulsoup4/), which is a library that makes it easy to scrape information from web pages.
-   - To instal Beautiful Soup executre the following command: <pre>pip install beautifulsoup4</pre>
+   - To instal Beautiful Soup execute the following command: <pre>pip install beautifulsoup4</pre>
