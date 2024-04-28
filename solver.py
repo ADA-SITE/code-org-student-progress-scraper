@@ -3,6 +3,7 @@
 Created on Tue Oct 26 21:54:03 2021
 
 @author: nsadili
+@maintainer: ayusubov
 """
 from asyncio.windows_events import NULL
 import os
@@ -49,7 +50,10 @@ def __extractUserDataDashboard(path):
     with open(path, 'r', encoding='utf-8') as fp:
         soup = BeautifulSoup(fp, 'html.parser')
 
-    container_main = soup.find('div', attrs={'class': 'container main'})
+    # container_main = soup.find('div', attrs={'class': 'container main'})
+    # New version of the Code.org vermicelli code.
+    # It stopped working because of the class name change.
+    container_main = soup.find('div', attrs={'class': 'full_container'})
 
     user_data = json.loads(container_main.find('script').get(
         'data-dashboard').replace('&quot;', '"'))
@@ -65,16 +69,20 @@ def __getUserIdUserMapping(path):
         data = json.load(fp)
 
     selected_section = None
-    for sec in data['sections']:
-        if(sec['name'] == SECTION_NAME):
-            selected_section = sec
-            break
+    # for sec in data['sections']:
+    # Super-duper changes in the new version of the Code.org vermicelli code.
+    # for sec in data['section']:
+    #     if(sec['name'] == SECTION_NAME):
+    #         selected_section = sec
+    #         break
+    # It stopped working because section now is an object instead of the previous array of objects.
+    selected_section = data['section']
 
     extracted_studs = {}
     for student in selected_section['students']:
         extracted_studs[student['id']] = student
 
-    print(extracted_studs)
+    # print(extracted_studs)
 
     with open(os.path.join('extracted_students.json'), 'w') as out:
         out.write(json.dumps(extracted_studs))
