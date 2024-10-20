@@ -214,7 +214,9 @@ def generateUserProgressReport():
 
         userProgressData.append(row)
 
-    with open('user_progress_report.csv', 'w') as fp:
+    #with open('user_progress_report.csv', 'w') as fp:
+    # We add encoding so it works with Unicode characters in names
+    with open('user_progress_report.csv', 'w', encoding='utf-8') as fp:
         fp.write(
             ',ID,Name,' + 'Not Started,In Progress,Incomplete,Complete,Assessment/Survey' + '\n')
         for i in range(len(userProgressData)):
