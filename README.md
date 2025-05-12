@@ -11,7 +11,7 @@ A quick research revealed that the student progress dashboard pages in HTML have
 - progress data is downloaded portion-by-portion while you scroll down the list
 - if you do not save the page as a complete web page, you do not get this data included in the .html file.
 
-You will have to prepare several .html files of saved dashboard page for different positions of scrolling in the list. A small Python script by @nsadili will scan these .html files, extract student records data, then match it with progress data and save it as a .csv file. 
+You will have to prepare several .html files of saved from Teacher Dashboard section progress page (view by Levels) for different positions of scrolling in the list. A small Python script by @nsadili will scan these .html files, extract student records data, then match it with progress data and save it as a .csv file. 
 
 ## User Manual
 1. Place the downloaded .html files under progress_files folder. Delete the .keep file in the folder.
